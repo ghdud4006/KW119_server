@@ -1,9 +1,10 @@
 # KW119_server
 
-NodeJs Server in EC2 Ubuntu 16.04
+###NodeJs Server in EC2 Ubuntu 16.04
 
-use MySQL DB
+###use MySQL DB
 
+```mysql
 > DESC userTbl
 
 +-----------+-------------+------+-----+---------+----------------+
@@ -16,7 +17,6 @@ use MySQL DB
 | studentId | varchar(10) | YES  |     | NULL    |                |
 | isStudent | tinyint(1)  | YES  |     | NULL    |                |
 +-----------+-------------+------+-----+---------+----------------+
-
 
 >DESC topicTbl
 
@@ -34,8 +34,8 @@ use MySQL DB
 | location  | varchar(30) | YES  |     | NULL    |                |
 | date      | date        | YES  |     | NULL    |                |
 +-----------+-------------+------+-----+---------+----------------+
-
-
+```
+```json
 "dependencies": {
     "date-utils": "^1.2.21",
     "express": "^4.16.3",
@@ -48,5 +48,5 @@ use MySQL DB
     "nodemon": "^1.17.5",
     "supervisor": "^0.12.0"
   }
-
+```
 
